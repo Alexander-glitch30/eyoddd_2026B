@@ -14,8 +14,27 @@ timestamp_01 = time.time()
 #programa que calcula las sumas
 # de los "n" numeros naturales
 n = 100
-sum = 0
+
+
+
+total_sum = 0
 
 #ciclo for
 for number in range(1,n+1):
-    print(str)(number)(+ " ")
+
+    total_sum=total_sum+number
+    #1: suma= 0+1
+    # suma= 1
+    #2: suma= 1+2
+    # suma= 3
+    #3: suma= 3+3
+    #...
+    #100: sum= valor anterior suma+100
+
+print(f"la suma de 1 hasta {n} es: {total_sum}")
+
+#tomando el tiempo final
+timestamp_02 = time.time()
+
+#impersion del tiempo de ejecucion
+print(f"tiempo de ejecucion: {(timestamp_02-timestamp_01) * 1e6:.2f} µs")
