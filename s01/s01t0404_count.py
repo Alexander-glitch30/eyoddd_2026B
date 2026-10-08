@@ -17,3 +17,4 @@ print (f"tamaño de lista de alumnos: {len(student_list_01)}")
 print(random_function(student_list_01))
 
 # Calcular la complejidad del algoritmo: o(n)+o(1)+o(1)+O(1)+O(n)+O(n)+o(1)+o(1)
+ 
