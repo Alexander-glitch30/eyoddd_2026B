@@ -22,7 +22,7 @@ def check_student(input_student, student_list):
     for student in student_list:
         if input_student==student: #o(n)
             print("estudiante encontrado👍")#o(1)
-            return student#o(1)
+            return student#o(1) 
     #si no encuentro al estudiante 
     print ("estuante nno encontrado❌")#o(1)
     return None#o(1)
