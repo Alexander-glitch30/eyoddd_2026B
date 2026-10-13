@@ -1,29 +1,40 @@
-#arrays
-#from array import
+#Array
+#from array import +
 import array as arr
 
-#crescion de un arreglo
-# 1: entero con signo
-# 2: entero sin signo
-# f: numero decimal 
-# d: numero decimal doble 
-# u: caracteres unicos 
-my_array=arr.array('i',[10,22,300,3,7,40,35,9,10,340,45])
+#creacion de un arreglo
+# i: Entero con signo
+# I: Entero sin signo
+# f: Numero Decimal
+# d: Numero decimal doble
+# u: Caracter Unicode
+my_array = arr.array('i', [10,20,300,3,7,40,55,88,700,3,11])
 
-#iteracion automatica
-#for num in my_array:
-#    print (num)
+# Intencion automatica
+# for num in my_array: 
+    # print(num)
 
-#acceso individual a los elementos
-#print (my_array[0]) #primer elemento
-#print (my_array[1]) #segundo elemento
-#print (my_array[3]) #tercer elemento
+# Acceso inidividual a los elementos 
+# print(my_array[0])# Primer elemento 
+# print(my_array[1])# Segundo elemento
+# print(my_array[2])# Tercer elemento
 
-#tamaño de arreglo
-#
-#print (len(my_array))
+# Tamaño de un arreglo 
+# Length
+# print(len(my_array))
 
-#interacion por indices
-for i in range (len(my_array)):
-     if my_array [i]%2==0:
-        print(f"elemento num {i+1}:{my_array[i]}")
+# Interacion por indice
+#for i in range(len(my_array)):
+    #if my_array[i] % 2 == 0:
+     #print(f"Elemento Num {i+1}: {my_array[i]}")
+
+#Busqueda de un elemento 
+num_to_search = 200
+
+#modificacion de un valor 
+#backet notation
+my_array[7]=200
+try:
+    print(f"Localizando {num_to_search}: {my_array.index(num_to_search)}")
+except:
+    print("☢️Numero no encontrado!!!")
