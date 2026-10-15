@@ -24,3 +24,8 @@ for integer in my_array:
     counter+=1
     if counter==len(my_array):
         print ("🚨 numero no encontrado 🚨")
+
+
+
+
+
