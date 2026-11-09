@@ -4,6 +4,12 @@ class Node:
     def __init__(self, data=None):
         self.data = data
         self.next = None
+    def iter(self):
+        while current:
+         current=self.head
+         value=current.data
+         current=current.next
+         yield value    
 
 # Testear nuestra clase nodo
 node_01 = Node("eggs")
@@ -27,9 +33,13 @@ node_02.next = node_03
 
  
  #lista transversal (recorrido de la lista)
-current =node_01
+for node_value in node_01.iter():
+    print (node_value)
 
-while current:
-    print(current.data, end=" --> ")
-    current=current.next
-print("")
+#creando una funcion principal
+def main():
+
+#invocando a main
+if __name__ == "__main__":
+   main()
+#main()
